@@ -1,4 +1,5 @@
 import Slider from './Slider'
 import Card from './Card'
 import Hero from './Hero'
-export {Slider, Card, Hero}
+import Calculator from './Calculator'
+export {Slider, Card, Hero, Calculator}
