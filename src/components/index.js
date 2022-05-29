@@ -1,3 +1,3 @@
 import Slider from './Slider'
-
-export {Slider}
+import Card from './Card'
+export {Slider, Card}

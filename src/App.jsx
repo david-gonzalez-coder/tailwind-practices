@@ -1,12 +1,12 @@
-import {Slider} from './components'
+import {Slider, Card} from './components'
 
 const App = () => {
   return (
     <>
       <Slider>
-        <div className="w-screen h-screen">1</div>
-        <div className="w-screen h-screen">2</div>
-        <div className="w-screen h-screen">3</div>
+        <Card>1</Card>
+        <Card>2</Card>
+        <Card>3</Card>
       </Slider>
       
     </>
