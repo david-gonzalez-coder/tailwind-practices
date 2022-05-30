@@ -1,14 +1,16 @@
-import {Slider, Card, Hero, Calculator} from './components'
+import {Slider, Card, Hero, Calculator, Profile} from './components'
 
 const App = () => {
   return (
     <>
       <Slider>
         <Hero />
-        <Card className="bg-stone-150  flex justify-center items-center">
+        <Card className="bg-stone-150 flex flex-center">
           <Calculator />
         </Card>
-        <Card>1</Card>
+        <Card>
+          <Profile />
+        </Card>
         <Card>2</Card>
         <Card>3</Card>
       </Slider>

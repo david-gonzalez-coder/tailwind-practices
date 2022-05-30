@@ -17,7 +17,7 @@ const Slider = ({children, className, ...rest}) => {
                 if(e.deltaY < 0) sliderRef.current.scrollLeft -= windowWidth
                 else sliderRef.current.scrollLeft += windowWidth
             }}
-            className={"snap-madatory snap-x scrollbar-none flex flex-wrap flex-col scroll-smooth h-screen w-screen overflow-x-scroll" + " " + className } 
+            className={"snap-mandatory snap-x scrollbar-none flex flex-wrap flex-col scroll-smooth h-screen w-screen overflow-x-scroll" + " " + className } 
             {...rest}
         >
             {children}
