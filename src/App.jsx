@@ -1,23 +1,22 @@
-import {Slider, Card, Hero, Calculator, Profile} from './components'
+import { Slider, Card, Hero, Calculator, Profile,Sizing, Typography } from "./components";
 
 const App = () => {
   return (
     <>
       <Slider>
         <Hero />
-        <Card className="bg-stone-150 flex flex-center">
-          <Calculator />
+        <Card className="flex-center flex bg-stone-150">
+          <Calculator  />
         </Card>
         <Card>
           <Profile />
         </Card>
         <Card>
-          
+          <Typography />
         </Card>
         <Card>3</Card>
       </Slider>
-      
     </>
-  )
-}
-export default App
+  );
+};
+export default App;

@@ -22,14 +22,14 @@ const Profile = () => {
   const textareaStyle = "w-full outline-teal-500 rounded-lg border p-3  resize-none h-28"
 
   return (
-    <div className='w-h-screen flex flex-wrap'>
+    <div className='flex flex-wrap w-h-screen'>
       <div
-        className='hidden grow bg-no-repeat bg-cover bg-center md:block'
+        className='hidden bg-center bg-no-repeat bg-cover grow md:block'
         style={{backgroundImage: `url('${profile}')`}}
       />
 
-      <div className='w-full md:w-[500px] 2xl:w-[600px] flex flex-center p-8'>
-        <div className='flex flex-center flex-wrap gap-6 text-center text-slate-700 flex-col'>
+      <div className='w-full md:w-[500px] 2xl:w-[600px] flex flex-center p-8  '>
+        <div className='flex flex-col flex-wrap gap-6 text-center flex-center text-slate-700 bg-'>
           {steps === 'one' && (
             <>
               <Title>Name of user</Title>
@@ -40,7 +40,7 @@ const Profile = () => {
                 provident eveniet quia tenetur.
               </p>
               <Btn1 onClick={() => setSteps('two')}>Get in touch</Btn1>
-              <nav className='w-full flex justify-center gap-4'>
+              <nav className='flex justify-center w-full gap-4'>
                 {links.map((e) => <a href={e.link} className={linkStyle}>{e.icon}</a>)}
               </nav>
             </>
@@ -51,7 +51,7 @@ const Profile = () => {
               <Title>Get in touch</Title>
               <p>Description. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo dicta</p>
               <form
-                className='w-full flex flex-col gap-4 items-center'
+                className='flex flex-col items-center w-full gap-4'
                 onSubmit={e => {e.preventDefault(); setSteps('three')}}
               >
                 <Input type='text' required placeholder='Name'/>

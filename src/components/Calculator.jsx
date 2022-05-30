@@ -22,14 +22,14 @@ const Calculator = () => {
     <div className={dark && "dark"}>
       <div className='dark:text-white max-h-[550px] w-h-screen max-w-2xs rounded-2xl bg-white dark:bg-calc-dark-100 flex flex-wrap shadow'>
         <div className={`h-1/3 w-full p-4 flex flex-col justify-between font-medium text-xl`}>
-          <div className=" rounded-xl dark:bg-calc-dark-300 bg-calc-light-100 flex w-max self-center cursor-pointer">
-            <div onClick={()=>setDark(false)} className="py-1 px-4 rounded-xl select-none active:shadow-inner">☼</div>
-            <div onClick={()=>setDark(true)} className="py-1 px-4  rounded-xl select-none active:shadow-inner">☾</div>
+          <div className="flex self-center cursor-pointer rounded-xl dark:bg-calc-dark-300 bg-calc-light-100 w-max">
+            <div onClick={()=>setDark(false)} className="px-4 py-1 select-none rounded-xl active:shadow-inner">☼</div>
+            <div onClick={()=>setDark(true)} className="px-4 py-1 select-none rounded-xl active:shadow-inner">☾</div>
           </div>
           <div className="self-end">{display}</div>
         </div>
         
-        <div className='h-2/3 rounded-2xl w-full dark:bg-calc-dark-300 bg-calc-light-100 p-4 grid grid-cols-4 grid-rows-5 gap-3'>
+        <div className='grid w-full grid-cols-4 grid-rows-5 gap-3 p-4 h-2/3 rounded-2xl dark:bg-calc-dark-300 bg-calc-light-100'>
           {values.map(e =>{
               let textColor
               if(e.match(/(\(|\)|\u232B)/g)) textColor = "text-teal-500"
