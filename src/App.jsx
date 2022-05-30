@@ -11,7 +11,9 @@ const App = () => {
         <Card>
           <Profile />
         </Card>
-        <Card>2</Card>
+        <Card>
+          
+        </Card>
         <Card>3</Card>
       </Slider>
       

@@ -15,7 +15,7 @@
 
 @layer components {
   .btn{
-    @apply rounded-full bg-zinc-100 outline-none py-2 px-5 m-2 transition-all w-max 
+    @apply rounded-full bg-zinc-100 outline-none py-2 px-5 m-2 transition-all w-max cursor-pointer 
   }
   .btn-ghost{
     @apply border bg-transparent
@@ -28,6 +28,28 @@
   }
   .flex-center{
     @apply justify-center items-center
+  }
+
+  .btn-xs {
+    @apply p-1 text-xs
+  }
+  .btn-sm {
+    @apply py-1 px-2 text-sm
+  }
+  .btn-base {
+    @apply py-2 px-4
+  }
+  .btn-md {
+    @apply py-2 px-6
+  }
+  .btn-lg {
+    @apply py-3 px-8 text-lg
+  }
+  .btn-xl {
+    @apply py-3 px-10 text-lg
+  }
+  .btn-2xl {
+    @apply py-4 px-12 text-xl
   }
   
 
