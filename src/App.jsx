@@ -14,7 +14,6 @@ const App = () => {
         <Card>
           <Typography />
         </Card>
-        <Card>3</Card>
       </Slider>
     </>
   );

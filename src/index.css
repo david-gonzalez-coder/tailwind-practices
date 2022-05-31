@@ -5,6 +5,9 @@
 @tailwind utilities;
 
 @layer base {
+  html{
+    -webkit-tap-highlight-color: transparent;
+  }
   a{
     @apply cursor-pointer inline-block
   }

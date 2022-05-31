@@ -1,7 +1,7 @@
 const Typography = () => {
   return (
-    <div className="grid max-h-screen w-screen grid-cols-2 items-start gap-8 overflow-hidden p-8">
-      <h2 className="col-span-2 mx-auto bg-gradient-to-r from-pink-400 to-violet-700 bg-clip-text font-mono text-5xl font-bold capitalize leading-normal text-transparent ">
+    <div className="grid max-h-screen w-screen xs:grid-cols-2 items-start gap-8 overflow-hidden p-8">
+      <h2 className="col-span-full mx-auto bg-gradient-to-r from-pink-400 to-violet-700 bg-clip-text font-mono text-5xl font-bold capitalize leading-normal text-transparent ">
         typography
       </h2>
 

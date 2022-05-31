@@ -20,7 +20,7 @@ const Calculator = () => {
 
   return (
     <div className={dark && "dark"}>
-      <div className='dark:text-white max-h-[550px] w-h-screen max-w-2xs rounded-2xl bg-white dark:bg-calc-dark-100 flex flex-wrap shadow'>
+      <div className='w-h-screen  dark:text-white xs:max-h-[550px] xs:max-w-2xs rounded-2xl bg-white dark:bg-calc-dark-100 flex flex-wrap shadow'>
         <div className={`h-1/3 w-full p-4 flex flex-col justify-between font-medium text-xl`}>
           <div className="flex self-center cursor-pointer rounded-xl dark:bg-calc-dark-300 bg-calc-light-100 w-max">
             <div onClick={()=>setDark(false)} className="px-4 py-1 select-none rounded-xl active:shadow-inner">☼</div>
